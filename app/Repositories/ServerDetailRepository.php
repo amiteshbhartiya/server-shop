@@ -60,7 +60,7 @@ class ServerDetailRepository implements ServerDetailRepositoryInterface
          * @param Hardisk value is string formate ex: 2x2TBSATA2
          * @return capacity in MB
          */
-        private function capacityHardiskMB($data)
+        public function capacityHardiskMB($data)
         {
             if (preg_match('/(\d+)x(\d+)(M|G|T)B/', $data, $m)) {
                 $capacity = $m[1];
@@ -74,7 +74,7 @@ class ServerDetailRepository implements ServerDetailRepositoryInterface
          * @param Ram value is string formate ex: 16GBDDR3
          * @return capacity in MB
          */
-        private function capacityRamMB($data)
+        public function capacityRamMB($data)
         {
             if (preg_match('/(\d+)(M|G|T)B/', $data, $m)) {
                 $capacity = $m[1];
