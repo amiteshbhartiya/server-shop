@@ -9,7 +9,7 @@ const Index = () => (
     <div className="grid-container">
        <Header></Header>
        <Main></Main>
-       <div className="item5">Footer</div>
+       <div className="item5">@copyright:server-shop</div>
     </div>
 );
 

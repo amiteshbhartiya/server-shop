@@ -67312,7 +67312,7 @@ var Index = function Index() {
     className: "grid-container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header_index__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Main_index__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "item5"
-  }, "Footer"));
+  }, "@copyright:server-shop"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
@@ -67575,7 +67575,7 @@ __webpack_require__.r(__webpack_exports__);
 var Header = function Header() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "item1"
-  }, "Header");
+  }, "Server Shop - Choose Your server");
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
