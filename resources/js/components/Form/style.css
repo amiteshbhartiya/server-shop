@@ -1,0 +1,94 @@
+.item2{
+    background-color: red;
+}
+.div-range{ grid-area: div-range; }
+.div-selectbox{ grid-area: div-selectbox; }
+.div-checkbox-container{ 
+  grid-area: div-checkbox-container;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.div-submit{ grid-area: div-submit; }
+
+form {
+    display: grid;
+    grid-template-areas:
+    'div-range'
+    'div-selectbox'
+    'div-checkbox-container'
+    'div-submit';
+    grid-gap: 10px;
+    background: #fff;
+    padding: 10px;
+}
+form label {
+    display: block;
+  }
+  button,
+  input,
+  textarea {
+    padding: 1em;
+  }
+  button:hover, button:focus {
+    background: gold;
+    outline: 0;
+  }
+      
+.div-checkbox{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    column-gap: 20px;
+    row-gap: 10px;
+    /* background: gold; */
+}
+.div-checkbox-header{
+  align-items: center;
+  display: grid;
+}
+.div-range{
+  grid-template-columns: auto auto auto auto;
+  display: grid;
+  text-align: center;
+  align-items: center;
+}
+input:focus,
+select:focus {
+  outline: 3px solid gold;
+}
+
+button {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #008CBA;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  }
+
+.button:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+
+.div-selectbox{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: 50px;
+    align-items: center;
+}
+select{
+  height: 100%;
+}

@@ -1,0 +1,29 @@
+.item1 { grid-area: header; }
+.item3 { grid-area: main; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container {
+    background-color: #343a40;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+}
+
+html *
+{
+   font-size: 1em !important;
+   font-family: Arial !important;
+}

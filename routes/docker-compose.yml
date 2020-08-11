@@ -1,0 +1,13 @@
+version: "3.6"
+
+services:
+  mysql:
+      image: mysql:8.0
+      container_name: cheetah_mysql
+      volumes:
+          - ./docker/mysql/conf.d/mysql.cnf:/etc/mysql/conf.d/mysql.cnf
+      ports:
+          - "3306:3306"
+      environment:
+          - MYSQL_DATABASE=${DB_DATABASE}
+          - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
